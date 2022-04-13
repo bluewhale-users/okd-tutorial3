@@ -15,10 +15,10 @@ spec:
   template:
     metadata:
       labels:
-        app: testblog
+        app: tutorial3
     spec:
       containers:
-      - name: testblog
+      - name: tutorial3
         image: docker.io/spcsenti/tutorial2-src:latest
         ports:
         - containerPort: 3000
