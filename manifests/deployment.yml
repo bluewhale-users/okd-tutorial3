@@ -2,7 +2,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: tutorial3
+  name: tutorial-frontend
   annotations:
     fluxcd.io/automated: "true"
 spec:
@@ -15,10 +15,10 @@ spec:
   template:
     metadata:
       labels:
-        app: tutorial3
+        app: tutorial-frontend
     spec:
       containers:
-      - name: tutorial3
+      - name: tutorial-frontend
         image: docker.io/spcsenti/tutorial2-src:latest
         ports:
         - containerPort: 3000
